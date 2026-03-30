@@ -1,0 +1,56 @@
+# See https://help.github.com/articles/ignoring-files/
+
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+coverage/
+
+# next.js
+.next/
+out/
+
+# production
+build/
+dist/
+
+# misc
+.DS_Store
+Thumbs.db
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# local env & secrets (do not commit)
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# caches & tooling
+.turbo/
+.cache/
+.eslintcache
+*.tsbuildinfo
+
+# IDE / editor (local-only; commit shared .vscode settings only if your team wants them)
+.idea/
+*.swp
+*.swo
+*~
