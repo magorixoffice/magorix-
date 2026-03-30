@@ -1,13 +1,6 @@
 import { NextResponse } from "next/server";
 
-const REASONS = new Set([
-  "general",
-  "demo",
-  "partnership",
-  "support",
-  "careers",
-  "other",
-]);
+const REASONS = new Set(["partnership", "career", "press", "other"]);
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 

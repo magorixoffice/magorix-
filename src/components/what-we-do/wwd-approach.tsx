@@ -3,16 +3,16 @@ import { cn } from "@/lib/utils";
 
 const ROWS = [
   {
-    title: "Unify the surface",
-    body: "One place for announcements, tasks, and follow-ups—aligned to roles so people see what matters to them, not everything at once.",
+    title: "Platform-first approach",
+    body: "We design one coherent layer—Wise Student, Inavora, and what comes next—so schools aren’t stitching together six disconnected products to get through the week.",
   },
   {
-    title: "Design for trust",
-    body: "Permissions, audit trails, and predictable workflows. Schools adopt software when leadership and families both believe it.",
+    title: "Data-driven insights",
+    body: "Leaders get signals they can act on: what’s working, what’s stuck, and where to intervene—without drowning teams in dashboards that arrive too late.",
   },
   {
-    title: "Measure what moves outcomes",
-    body: "Lightweight signals on engagement and progress—enough to steer, never enough to drown your team in dashboards.",
+    title: "Community-centered design",
+    body: "Teachers, parents, and students stay in the loop by default—permissions, language, and pace match how Indian institutions actually operate.",
   },
 ] as const;
 
@@ -50,11 +50,11 @@ export function WwdApproach({ className }: WwdApproachProps) {
           id="wwd-approach-heading"
           className="font-heading text-2xl font-bold tracking-tight text-foreground md:text-3xl"
         >
-          Our approach
+          How we think about it differently.
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-foreground/60 md:text-base">
-          Three principles that show up in how we ship—and how the product feels
-          day to day.
+          Three commitments that show up in what we build—and how it feels in the
+          field.
         </p>
 
         <div className="mt-12 space-y-14 md:mt-16 md:space-y-20">

@@ -7,7 +7,7 @@ import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata({
   title: "Careers",
   description:
-    "Open roles at Magorix, why people join, team filters, and how to apply—remote-first, India-focused.",
+    "Join Magorix—early-stage team, open roles, why we work here, and how to apply. Remote-first, India-focused.",
   path: "/careers",
 });
 

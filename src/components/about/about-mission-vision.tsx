@@ -33,12 +33,13 @@ export function AboutMissionVision({ className }: AboutMissionVisionProps) {
                 id="about-mission-heading"
                 className="font-heading text-xl font-semibold tracking-tight text-foreground md:text-2xl"
               >
-                Mission
+                Our Mission
               </h2>
               <p className="mt-3 text-sm leading-relaxed text-foreground/62 md:text-[15px]">
-                Give every school a single, trustworthy surface for operations and
-                learning—so educators teach, families stay informed, and students
-                stay at the center.
+                Equip schools and families with calm, purposeful products—built
+                for how India actually teaches—so educators lead, families stay
+                informed, and students stay at the center of every decision we
+                ship.
               </p>
             </div>
           </article>
@@ -59,11 +60,13 @@ export function AboutMissionVision({ className }: AboutMissionVisionProps) {
                 id="about-vision-heading"
                 className="font-heading text-xl font-semibold tracking-tight text-foreground md:text-2xl"
               >
-                Vision
+                Our Vision
               </h2>
               <p className="mt-3 text-sm leading-relaxed text-foreground/62 md:text-[15px]">
-                A future where Bharat&apos;s schools run on software that respects
-                context, language, and pace—without sacrificing clarity or control.
+                A future where Bharat&apos;s institutions run on software that
+                respects context, language, and pace—clear, accountable, and
+                student-first—without stitching together a dozen vendors or
+                sacrificing control in the name of &quot;innovation.&quot;
               </p>
             </div>
           </article>

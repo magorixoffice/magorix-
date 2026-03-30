@@ -1,9 +1,10 @@
-import Link from "next/link";
 import { buttonBaseClass, buttonVariantClasses } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
+import { PRODUCTS } from "@/data/products";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
-function FeaturedMockup() {
+function FeaturedMockup({ label }: { label: string }) {
   return (
     <div
       className={cn(
@@ -31,7 +32,7 @@ function FeaturedMockup() {
         </div>
       </div>
       <p className="pointer-events-none absolute bottom-5 left-0 right-0 text-center font-heading text-[10px] font-semibold uppercase tracking-[0.2em] text-foreground/30">
-        Magorix workspace
+        {label}
       </p>
     </div>
   );
@@ -53,64 +54,69 @@ export function ProductsFeatured({ className }: ProductsFeaturedProps) {
     >
       <Container>
         <div className="mx-auto max-w-6xl">
-          <p className="text-center font-heading text-[11px] font-semibold uppercase tracking-[0.28em] text-accent">
-            Flagship
-          </p>
-
-          <article
-            className={cn(
-              "mt-6 overflow-hidden rounded-2xl md:mt-8",
-              "border border-accent/30 bg-[#0c111c]",
-              "shadow-[0_0_0_1px_rgba(79,142,247,0.12)_inset,0_0_100px_-40px_rgba(79,142,247,0.35)]"
-            )}
+          <h2
+            id="products-featured-heading"
+            className="text-center font-heading text-[11px] font-semibold uppercase tracking-[0.28em] text-accent"
           >
-            <div className="grid lg:grid-cols-[1fr_minmax(0,1.15fr)] lg:items-stretch">
-              <div className="flex flex-col justify-center px-6 py-10 sm:px-10 sm:py-12 lg:px-12 lg:py-14">
-                <h2
-                  id="products-featured-heading"
-                  className="font-heading text-3xl font-bold leading-[1.1] tracking-[-0.03em] text-foreground md:text-4xl lg:text-[2.75rem]"
-                >
-                  Magorix Workspace
-                </h2>
-                <p className="mt-5 text-base leading-relaxed text-foreground/65 md:mt-6 md:text-lg">
-                  The operating layer for your school: announcements, tasks,
-                  permissions, and visibility across teams—without duct-taping five
-                  products together.
-                </p>
-                <ul className="mt-8 space-y-3 text-sm leading-relaxed text-foreground/55 md:text-[15px]">
-                  <li className="flex gap-3">
-                    <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent" />
-                    Role-aware views for staff, families, and students
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent" />
-                    Audit-friendly workflows you can defend in a room
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-accent" />
-                    Built to deploy campus-by-campus, not as a risky big bang
-                  </li>
-                </ul>
-                <div className="mt-10 flex flex-wrap items-center gap-4 md:mt-12">
-                  <Link
-                    href="/contact"
-                    className={cn(
-                      buttonBaseClass,
-                      buttonVariantClasses.primary,
-                      "min-h-[48px] px-7 py-3 text-base font-semibold"
-                    )}
-                  >
-                    Request access
-                  </Link>
-                  <span className="text-xs font-medium text-foreground/40">
-                    Private beta · India-first cohorts
-                  </span>
-                </div>
-              </div>
+            Our Products
+          </h2>
 
-              <FeaturedMockup />
-            </div>
-          </article>
+          <div className="mt-8 flex flex-col gap-10 md:mt-10 md:gap-12">
+            {PRODUCTS.map((product) => (
+              <article
+                key={product.id}
+                id={product.id}
+                className={cn(
+                  "overflow-hidden rounded-2xl",
+                  "border border-accent/30 bg-[#0c111c]",
+                  "shadow-[0_0_0_1px_rgba(79,142,247,0.12)_inset,0_0_100px_-40px_rgba(79,142,247,0.35)]"
+                )}
+              >
+                <div className="grid lg:grid-cols-[1fr_minmax(0,1.15fr)] lg:items-stretch">
+                  <div className="flex flex-col justify-center px-6 py-10 sm:px-10 sm:py-12 lg:px-12 lg:py-14">
+                    <h3 className="font-heading text-3xl font-bold leading-[1.1] tracking-[-0.03em] text-foreground md:text-4xl lg:text-[2.75rem]">
+                      {product.name}
+                    </h3>
+                    <p className="mt-5 text-base leading-relaxed text-foreground/65 md:mt-6 md:text-lg">
+                      {product.description}
+                    </p>
+                    <div className="mt-10 flex flex-wrap items-center gap-4 md:mt-12">
+                      {product.exploreExternal ? (
+                        <a
+                          href={product.exploreHref}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={cn(
+                            buttonBaseClass,
+                            buttonVariantClasses.primary,
+                            "min-h-[48px] px-7 py-3 text-base font-semibold"
+                          )}
+                        >
+                          {product.exploreLabel}
+                        </a>
+                      ) : (
+                        <Link
+                          href={product.exploreHref}
+                          className={cn(
+                            buttonBaseClass,
+                            buttonVariantClasses.primary,
+                            "min-h-[48px] px-7 py-3 text-base font-semibold"
+                          )}
+                        >
+                          {product.exploreLabel}
+                        </Link>
+                      )}
+                      <span className="text-xs font-medium text-foreground/40">
+                        {product.status}
+                      </span>
+                    </div>
+                  </div>
+
+                  <FeaturedMockup label={product.name} />
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </Container>
     </section>

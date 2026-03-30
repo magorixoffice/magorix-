@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { FeatureCards } from "@/components/sections/feature-cards";
+import { HomeWhatWeDoIntro } from "@/components/sections/home-what-we-do-intro";
 import { Hero } from "@/components/sections/hero";
 import { HiringBanner } from "@/components/sections/hiring-banner";
 import { LogoMarquee } from "@/components/sections/logo-marquee";
@@ -30,6 +31,7 @@ export default function Home() {
     <main>
       <Hero />
       <LogoMarquee />
+      <HomeWhatWeDoIntro />
       <FeatureCards />
       <ValuesGrid />
       <ProductTeaser />

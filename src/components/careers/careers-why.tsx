@@ -4,24 +4,24 @@ import { cn } from "@/lib/utils";
 
 const REASONS = [
   {
-    title: "Mission you can explain",
-    line: "Work that shows up in parent-teacher meetings—not just slide decks.",
+    title: "High ownership from day one",
+    line: "Own outcomes end-to-end—from spec to ship—without waiting on layers that exist only to exist.",
     Icon: Sparkles,
   },
   {
-    title: "Small, senior team",
-    line: "No layers for the sake of layers. Ownership end-to-end.",
+    title: "Work on real, hard problems",
+    line: "Education, financial literacy, and live learning—messy, meaningful work that shows up in classrooms.",
     Icon: Users,
   },
   {
-    title: "India-first context",
-    line: "We optimize for Bharat’s campuses, languages, and constraints.",
-    Icon: Globe2,
+    title: "Grow with a founding team",
+    line: "Small team, high leverage; your growth and the company's trajectory stay tightly linked.",
+    Icon: HeartHandshake,
   },
   {
-    title: "Humane pace",
-    line: "Fast shipping without pretending burnout is a strategy.",
-    Icon: HeartHandshake,
+    title: "🇮🇳 Shape education in India",
+    line: "Build for Bharat's schools and families—context, language, and pace first.",
+    Icon: Globe2,
   },
 ] as const;
 
@@ -63,9 +63,7 @@ export function CareersWhy({ className }: CareersWhyProps) {
               <h3 className="font-heading text-base font-semibold tracking-tight text-foreground md:text-lg">
                 {title}
               </h3>
-              <p className="text-sm leading-relaxed text-foreground/55">
-                {line}
-              </p>
+              <p className="text-sm leading-relaxed text-foreground/55">{line}</p>
             </li>
           ))}
         </ul>

@@ -15,21 +15,21 @@ type Feature = {
 
 const FEATURES: Feature[] = [
   {
-    title: "Schools",
+    title: "For Schools",
     description:
-      "Streamline administration, communication, and learning operations with tools built for districts and campuses.",
+      "Better tools, deeper insights, and smarter administration built for institutional needs.",
     Icon: School,
   },
   {
-    title: "Families",
+    title: "For Families",
     description:
-      "Stay aligned on schedules, progress, and milestones—clear updates without the noise.",
+      "Keep parents connected and informed about every step of their child's growth.",
     Icon: UsersRound,
   },
   {
-    title: "Students",
+    title: "For Students",
     description:
-      "Focus on what matters: coursework, goals, and growth—with a calm, guided experience.",
+      "Learning experiences that are personalised, engaging, and actually effective.",
     Icon: GraduationCap,
   },
 ];

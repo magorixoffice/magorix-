@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata({
   title: "Products",
   description:
-    "Magorix Workspace—our flagship product—and what’s next on the roadmap for schools.",
+    "Wise Student and Inavora—financial literacy and real-time interactive presentations. See what’s next on the Magorix roadmap.",
   path: "/products",
 });
 

@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata({
   title: "Contact",
   description:
-    "Reach Magorix—email, location, and a contact form for demos, partnerships, and support.",
+    "Contact Magorix—email, Chennai, social links, WhatsApp, and a message form. We reply within 24 hours.",
   path: "/contact",
 });
 

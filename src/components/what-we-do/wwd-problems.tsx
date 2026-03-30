@@ -2,10 +2,9 @@ import { Container } from "@/components/ui/container";
 import { cn } from "@/lib/utils";
 
 const PROBLEMS = [
-  "Critical updates get lost across chat, email, and paper—families stop trusting the channel.",
-  "Staff juggle five systems that don’t talk; reporting is manual and always late.",
-  "Students see a fragmented experience: schedules here, grades there, nowhere to get unstuck.",
-  "Leadership lacks a single honest view of what’s working—decisions are made on anecdotes.",
+  "Schools lack the tools to track real student growth.",
+  "Parents are disconnected from their child's learning journey.",
+  "Students are disengaged because learning isn't designed for them.",
 ] as const;
 
 type WwdProblemsProps = {
@@ -29,7 +28,7 @@ export function WwdProblems({ className }: WwdProblemsProps) {
           Problems we obsess over
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-foreground/60 md:text-base">
-          If this sounds familiar, you&apos;re exactly who we build for.
+          Three gaps we see in almost every institution we talk to.
         </p>
 
         <ol className="mt-10 max-w-3xl space-y-8 md:mt-12 md:space-y-10">

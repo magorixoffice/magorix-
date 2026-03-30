@@ -7,7 +7,7 @@ import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata({
   title: "What We Do",
   description:
-    "Problems we solve, our approach, and impact—operations, communication, and learning in one place.",
+    "The problems we solve, how Magorix thinks differently, and impact numbers—platform-first, data-driven, community-centered.",
   path: "/what-we-do",
 });
 

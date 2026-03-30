@@ -2,10 +2,10 @@ import { Container } from "@/components/ui/container";
 import { cn } from "@/lib/utils";
 
 const STATS = [
-  { value: "40+", label: "Campuses in active programs" },
-  { value: "12k+", label: "Students & families on platform" },
-  { value: "3.2×", label: "Faster cross-team handoffs (avg.)" },
-  { value: "99.2%", label: "Uptime on core services" },
+  { value: "3", label: "Audiences Served" },
+  { value: "1", label: "Unified Platform" },
+  { value: "10+", label: "Schools in Pipeline" },
+  { value: "IN", label: "Built in India 🇮🇳" },
 ] as const;
 
 type WwdImpactProps = {
@@ -26,11 +26,11 @@ export function WwdImpact({ className }: WwdImpactProps) {
           id="wwd-impact-heading"
           className="font-heading text-2xl font-bold tracking-tight text-foreground md:text-3xl"
         >
-          Impact at a glance
+          Impact numbers
         </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-foreground/60 md:text-base">
-          Directional metrics from our early cohorts—your mileage will vary, but
-          the goal is always the same: less drag, more signal.
+          A snapshot of where we are today—numbers move as we onboard schools and
+          ship the next release.
         </p>
 
         <ul className="mt-10 grid list-none grid-cols-2 gap-8 md:mt-12 md:grid-cols-4 md:gap-10">

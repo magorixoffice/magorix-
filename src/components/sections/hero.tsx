@@ -9,9 +9,9 @@ import { staggerContainer, staggerItem } from "@/lib/motion";
 import { cn } from "@/lib/utils";
 
 const headingLines = [
-  "Build products that",
-  "feel inevitable.",
-  "Ship at Magorix speed.",
+  "We're building the",
+  "infrastructure for",
+  "tomorrow's learners.",
 ] as const;
 
 export function Hero() {
@@ -43,7 +43,7 @@ export function Hero() {
         >
           <motion.div variants={staggerItem}>
             <Badge className="border-white/12 bg-white/[0.07] px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-foreground/85">
-              Magorix · Product platform
+              Now building the future of education
             </Badge>
           </motion.div>
 
@@ -64,10 +64,10 @@ export function Hero() {
 
           <motion.p
             variants={staggerItem}
-            className="mt-8 max-w-xl text-base font-medium leading-relaxed text-foreground/65 md:mt-10 md:text-lg"
+            className="mt-8 max-w-2xl text-base font-medium leading-relaxed text-foreground/65 md:mt-10 md:text-lg"
           >
-            One stack for strategy, delivery, and growth—crafted for teams who
-            care how the work feels, not just how fast it ships.
+            An EdTech company on a mission to transform how schools, students,
+            and parents experience education in India.
           </motion.p>
 
           <motion.div

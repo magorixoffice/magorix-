@@ -11,7 +11,7 @@ export const dynamic = "force-dynamic";
 export const metadata = pageMetadata({
   title: "About",
   description:
-    "How Magorix started, what we believe, our mission and vision, values, and team.",
+    "Why we started Magorix—our story, mission and vision, values, and team.",
   path: "/about",
 });
 

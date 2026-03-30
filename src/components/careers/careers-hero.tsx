@@ -26,11 +26,12 @@ export function CareersHero({ className }: CareersHeroProps) {
           id="careers-hero-heading"
           className="mt-4 max-w-3xl min-w-0 break-words font-heading text-3xl font-bold leading-[1.1] tracking-[-0.03em] text-foreground md:mt-5 md:text-4xl lg:text-5xl"
         >
-          Build with us—in public education, at product speed
+          Build something that matters.
         </h1>
         <p className="mt-6 max-w-2xl text-base leading-relaxed text-foreground/65 md:mt-8 md:text-lg">
-          Small team, high craft. We hire for taste, judgment, and respect for
-          schools—not résumé theater.
+          We&apos;re an early-stage team that moves fast,
+          <br />
+          thinks big, and takes education seriously.
         </p>
       </Container>
     </section>

@@ -26,11 +26,13 @@ export function WwdHero({ className }: WwdHeroProps) {
           id="wwd-hero-heading"
           className="mt-4 max-w-3xl min-w-0 break-words font-heading text-3xl font-bold leading-[1.1] tracking-[-0.03em] text-foreground md:mt-5 md:text-4xl lg:text-5xl"
         >
-          Clarity for schools, families, and students—end to end
+          Education is broken. We&apos;re fixing it.
         </h1>
         <p className="mt-6 max-w-2xl text-base leading-relaxed text-foreground/65 md:mt-8 md:text-lg">
-          We focus on the messy middle: operations, communication, and learning
-          signals—so your institution moves as one system, not a pile of tools.
+          Schools still run on disconnected tools and brittle handoffs—so leaders
+          guess, families disengage, and students get a fragmented experience.
+          Magorix exists to replace that drift with one calm, accountable layer
+          built for how India actually teaches.
         </p>
       </Container>
     </section>
